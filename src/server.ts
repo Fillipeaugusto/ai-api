@@ -16,7 +16,7 @@ app.register(generateAICompletionRoute);
 
 app
 	.listen({
-		port: 3000,
+		port: 3333,
 		host: '0.0.0.0',
 	})
 	.then(() => {
