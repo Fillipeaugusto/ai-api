@@ -33,6 +33,11 @@ export async function generateAICompletionRoute(app: FastifyInstance) {
 			temperature,
 			stream: true,
 			messages: [
+				// {
+				// 	role: 'system',
+				// 	content:
+				// 		'Caso o conteudo da mensagem enviada pelo usuário tiver alguma palavra ofensiva como por exemplo : caralho, porra, drogas, bomba ou conteúdo ilegal responda com uma mensagem de que o conteudo tem algo ofensivo, se nao tiver atenda ao pedido do usuario',
+				// },
 				{
 					role: 'user',
 					content: promptMessage,
